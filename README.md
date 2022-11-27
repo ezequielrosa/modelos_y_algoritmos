@@ -1,72 +1,76 @@
-# Algorithm Templates
+# Modelos y Algoritmos
 
 
 
-## Description
+## Descripción
 
-Templates and examples in Python3, including common **data structure** & **algorithms**.
+Modelos y ejemplos en Python3 que incluyen los **algoritmos** y **estructuras de datos** más comunes. 
 
-I have collected and summarized general code templates for particular algorithms, and add most typical examples to help make better use of it. All the examples come from [LeetCode](https://www.leetcode.com), and I have attached the problem id and brief description.
+(Es la traducción al español-argentino del repositorio original recnac-itna/Algorithm_Templates).
 
-
-
-***"Stop Trying to Reinvent the Wheel"***
-
-So I try my best to find the commonality in problems, solutions and codes. When I study, I have summarized templates for future use. 
-
-First I intended to use it for myself, and now I realize maybe it is good enough to share with people who also need it.
+Junté y resumí el código que generaliza el esquema de algoritmos específicos y además agregué los ejemplos más comunes de estos para facilitar su uso. Todos los ejemplos están sacados de [LeetCode](https://www.leetcode.com) a los que les adjunté el id del problema mas una breve descripción de los mismos.
 
 
 
+***"Basta de Tratar de Reinventar la Rueda"***
 
-## Supplementary explanation
-1. It is written in **Python3**, but easy to extend to other languages, such as **Java**, **C++**. Just replace the python syntactic sugar and advanced tricks, maybe just less concise.
+Así que hice mi mejor esfuerzo en encontrar las similitudes entre problemas comunes, sus soluciones y los códigos. Cuando estudié hice resúmenes de patrones y esquemas de diseño para sus futuros usos. 
 
-2. With my limited time and ability, here only covers **common** data structure & algorithms. Almost suitable for interview, but insufficient for competition.
-
-3. I have tried my best to collect and summarize the most general and best-practice templates in particular area, but this version may not be the best solution. Or, it's really the best performance and most concise solution, but it's not the suitable for you. Within acceptable performance, **it is the best practice for you when you use it most conveniently**. 
-
-4. Code templates is written by python with some **pseudo code**, so I use `self` and add stub functions to pass compiler's check. You should replace them with your particular logic according to the comments.
+Mi intención original era usarlos personalmente pero ahora me doy cuenta que sería bueno compartirlos con quienes puedan llegar a necesitarlos.
 
 
 
-## Why Python?
-***"life is short, you need python"***
+## Explicaciones complementarias
 
-With the help of Python's advanced features, it can let us ignore redundant grammar, and totally focus on algorithm and logic.
+1. Está escrito en **Python3**, pero sería fácil exportarlos a otros lenguajes, como **Java**, **C++**. Simplemente reemplazando la dulzura sintáctica de Python y sus trucos avanzados, tal vez solo se vuelvan menos concisos.
 
-Besides, it is popular, and I'm the big fan of this language myself.
+2. Con mis limitadas capacidades y la escacés de tiempo, aquí solo se cubren algoritmos y estructuras de datos **comunes**. Casi adecuados para una entrevista laboral, pero insuficientes para un concurso.
 
+3. Hice todo lo posible para recopilar y resumir los esquemas generales y los mejores casos de uso en algún área específica, aunque cada versión puede no ser la mejor solución posible. O bien puede que efectivamente sea la de mejor rendimiento y la solución más concisa pero que no sea precisamente la adecuada a tu necesidad. Dentro de un rendimiento aceptable, **la mejor implementación para cada uno de estos casos es a la que le podemos dar el uso más convenientemente**.
 
-
-
-## Who is this for?
-1. If you will have interviews soon, and plan to review data structure & algorithm. You can review by these summary, and improve **practical** skills by typical examples.
-2. If you want to study algorithm by **practice**, here you can understand the key point in templates, and practice the examples from easy to hard, to understand it deeper.
-3. If you are a LeetCoder, you want to focus on your weak topics, and have no idea to which problems to solve, here is well classified and provides the most typical examples. Or, you are too tired to find a fastest and elegant answer in discussion, here can save your time.
-4. If you are a python beginner, and want to enhance your advanced pythonic skills, you can focus on python tricks. Hope you will find useful and elegant techniques here. 
+4. Los patrones de código están escritos en python con algo de **pseudocódigo**, así que uso `self` y agrego funciones auxiliares para que no de error el compilador. Hay que reemplazarlos con tu código (la lógica del mismo) de acuerdo a lo que indican los comentarios.
 
 
 
-## Thanks to
-* Thanks to all good problems from LeetCode. In addition, LeetCode has a great OJ platform, and really suitable to do functional and performance test.
-* Many templates and tricks are enlightened by discussions in LeetCode, thanks to all the code masters.
-* Special thanks to [Stefan Pochmann](https://leetcode.com/stefanpochmann/), really learned a lot from him.
+## ¿Por qué Python?
+
+***"la vida es corta, necesitas python"***
+
+Las características avanzadas de Python nos ayudan, podemos permitirnos ignorar la gramática redundante y centrarnos totalmente en el algoritmo y su lógica.
+
+Además, es popular, y soy un gran admirador de este lenguaje.
 
 
 
-## MIT License
+## ¿Para quién es esto?
 
-Feel free to use, copy, modify, merge or publish. just add a reference, please. 
+1. Si vas a tener entrevistas laborales en breve y tenes pensado rever las estructuras de datos y algoritmos, podés repasar estos resúmenes y mejorar tus habilidades **prácticas** con sus ejemplos característicos.
 
-If it helps you or you like it, you can star or share it. thanks : )
+2. Si querés estudiar un algoritmo mediante la **práctica**, con este material podés comprender los puntos clave de cada patrón o modelo de diseño y practicar con ejemplos de más fácil a más difícil para ir profundizando en comprensión.
 
-I'm glad if you want to contribute to make it better.
+3. Si sos un LeetCoder y querés centrarte en tus puntos débiles y no tenés ni idea de qué problemas podés resolver, acá están bien clasificados y se proporcionan los ejemplos típicos. O bien si estás demasiado cansado para encontrar una respuesta rápida y elegante a una discusión acá podés ahorrarte tiempo.
+
+4. Si sos un principiante de Python y deseas mejorar sus habilidades avanzadas de Python, podés concentrarse en los trucos de Python. Espero que aquí encuentres técnicas útiles y elegantes.
 
 
 
+## Gracias a
 
-## Reference
+* Gracias a todos los buenos problemas de LeetCode. Además, LeetCode tiene una gran plataforma OJ (open java) y es realmente adecuada para realizar pruebas y análisis de rendimiento.
+* Muchas plantillas y trucos están iluminados por discusiones en LeetCode, gracias a todos los maestros del código.
+* Un agradecimiento especial a [Stefan Pochmann](https://leetcode.com/stefanpochmann/), realmente aprendí mucho de él.
+
+
+
+## Licencia MIT
+
+Sentite libre de usar, copiar, modificar, fusionar o publicar, solo agregue una referencia, por favor.
+Si te ayuda o te gusta, podés destacarlo o compartirlo. Gracias : )
+Me alegro si quieres contribuir a que sea mejor.
+
+
+
+## Referencia
 
 * https://leetcode.com/problemset/all/
 * https://leetcode.com/discuss/
@@ -78,45 +82,45 @@ I'm glad if you want to contribute to make it better.
 
 
 
+## Discusiones de generalización extraídas de LeetCode
 
-## Generalization Discussions scraping from LeetCode
-I scrape the most popular discussions and filter the ones which summarized a general approach to particular domain, such as backtracking, dynamic programming, sliding window, bit manipulation. 
+Extraje las discusiones más populares y filtré las que resumen un enfoque general de un tema en particular, como la recurrencia, la programación dinámica, la ventana deslizante, la manipulación de bits.
 
-Well worth reading:
+Vale la pena leer:
 
-- **sliding window**
+- **ventana deslizante**
 
   <https://leetcode.com/problems/minimum-window-substring/discuss/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems>
 
-  <https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem.>
+  <https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem .>
 
-- **bit manipulation**
+- **manipulación de bits**
 
-  <https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently>
+  <https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-facilmente-y-eficientemente >
 
-- **dynamic programming**
+- **programación dinámica**
 
   <https://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-How-to-approach-most-of-DP-problems.>
 
-  <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/discuss/108870/Most-consistent-ways-of-dealing-with-the-series-of-stock-problems>
+  <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/discuss/108870/Most-consistent-ways-of-lidiar-with-the-series -de-problemas-de-stock>
 
-- **solving array-related problems**
+- **resolver problemas relacionados con matrices**
 
   <https://leetcode.com/problems/reverse-pairs/discuss/97268/General-principles-behind-problems-similar-to-%22Reverse-Pairs%22>
 
-- **binary tree traversal**
+- **recorrido de árbol binario**
 
   <https://leetcode.com/problems/binary-tree-postorder-traversal/discuss/45551/Preorder-Inorder-and-Postorder-Iteratively-Summarization>
 
-- **backtracking**
+- **recurrencia**
 
   <https://leetcode.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)>
 
-- **bitwise operation for single numbers**
+- **operación bit a bit para números individuales**
 
   <https://leetcode.com/problems/single-number-ii/discuss/43295/Detailed-explanation-and-generalization-of-the-bitwise-operation-method-for-single-numbers>
 
 
 
-## Contact
+## Contacto
 recnac@foxmail.com
