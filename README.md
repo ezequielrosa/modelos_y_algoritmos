@@ -14,7 +14,7 @@ Junté y resumí el código que generaliza el esquema de algoritmos específicos
 
 ***"Basta de Tratar de Reinventar la Rueda"***
 
-Así que hice mi mejor esfuerzo en encontrar las similitudes entre problemas comunes, sus soluciones y los códigos. Cuando estudié hice resúmenes de patrones y esquemas de diseño para sus futuros usos. 
+Así que hice mi mejor esfuerzo en encontrar las similitudes entre problemas comunes, sus soluciones y los códigos. Cuando estudié hice resúmenes de patrones y esquemas de diseño para sus uso futuro. 
 
 Mi intención original era usarlos personalmente pero ahora me doy cuenta que sería bueno compartirlos con quienes puedan llegar a necesitarlos.
 
@@ -22,13 +22,13 @@ Mi intención original era usarlos personalmente pero ahora me doy cuenta que se
 
 ## Explicaciones complementarias
 
-1. Está escrito en **Python3**, pero sería fácil exportarlos a otros lenguajes, como **Java**, **C++**. Simplemente reemplazando la dulzura sintáctica de Python y sus trucos avanzados, tal vez solo se vuelvan menos concisos.
+1. Está escrito en **Python3**, pero sería fácil exportarlos a otros lenguajes, como **Java**, **C++**. Simplemente reemplazando la dulzura sintáctica de Python y sus trucos avanzados, tal vez solo se vuelvan un poco menos concisos.
 
-2. Con mis limitadas capacidades y la escacés de tiempo, aquí solo se cubren algoritmos y estructuras de datos **comunes**. Casi adecuados para una entrevista laboral, pero insuficientes para un concurso.
+2. Debido a mis limitadas capacidades y a la escacés de tiempo aquí solo se cubren los algoritmos y estructuras de datos **comunes**. Casi adecuados para una entrevista laboral, pero insuficientes para presentarse a un concurso.
 
-3. Hice todo lo posible para recopilar y resumir los esquemas generales y los mejores casos de uso en algún área específica, aunque cada versión puede no ser la mejor solución posible. O bien puede que efectivamente sea la de mejor rendimiento y la solución más concisa pero que no sea precisamente la adecuada a tu necesidad. Dentro de un rendimiento aceptable, **la mejor implementación para cada uno de estos casos es a la que le podemos dar el uso más convenientemente**.
+3. Hice todo lo posible para recopilar y resumir los esquemas generales y los mejores casos de uso en algún área específica, aunque cada versión puede no ser la mejor solución posible, o bien puede que efectivamente sea la de mejor rendimiento y la solución más concisa pero que no sea precisamente la más adecuada a tu necesidad. Dentro del rendimiento aceptable, **la mejor implementación para cada uno de estos casos es la que nos resulte más convenientemente**.
 
-4. Los patrones de código están escritos en python con algo de **pseudocódigo**, así que uso `self` y agrego funciones auxiliares para que no de error el compilador. Hay que reemplazarlos con tu código (la lógica del mismo) de acuerdo a lo que indican los comentarios.
+4. Los patrones de código están escritos en python con algo de **pseudocódigo**, así que uso `self` y agrego funciones auxiliares para que no de error el compilador. Hay que reemplazarlos con tu código (la lógica del mismo) de acuerdo a lo que van indicando los comentarios.
 
 
 
@@ -48,23 +48,23 @@ Además, es popular, y soy un gran admirador de este lenguaje.
 
 2. Si querés estudiar un algoritmo mediante la **práctica**, con este material podés comprender los puntos clave de cada patrón o modelo de diseño y practicar con ejemplos de más fácil a más difícil para ir profundizando en comprensión.
 
-3. Si sos un LeetCoder y querés centrarte en tus puntos débiles y no tenés ni idea de qué problemas podés resolver, acá están bien clasificados y se proporcionan los ejemplos típicos. O bien si estás demasiado cansado para encontrar una respuesta rápida y elegante a una discusión acá podés ahorrarte tiempo.
+3. Si sos un LeetCoder y querés centrarte en tus puntos débiles y no tenés ni idea de qué problemas podés resolver, acá están bien clasificados y se proporcionan los ejemplos típicos, o bien si estás demasiado cansado para encontrar una respuesta rápida y elegante a una discusión acá podés ahorrarte tiempo.
 
-4. Si sos un principiante de Python y deseas mejorar sus habilidades avanzadas de Python, podés concentrarse en los trucos de Python. Espero que aquí encuentres técnicas útiles y elegantes.
+4. Si sos un principiante de Python y deseas mejorar sus habilidades avanzadas de Python podés enfocarte en los trucos de Python. Espero que aquí encuentres técnicas útiles y elegantes.
 
 
 
-## Gracias a
+## Agradecimientos
 
 * Gracias a todos los buenos problemas de LeetCode. Además, LeetCode tiene una gran plataforma OJ (open java) y es realmente adecuada para realizar pruebas y análisis de rendimiento.
-* Muchas plantillas y trucos están iluminados por discusiones en LeetCode, gracias a todos los maestros del código.
+* Muchas plantillas y trucos están aclarados con discusiones en LeetCode, gracias a todos los maestros del código.
 * Un agradecimiento especial a [Stefan Pochmann](https://leetcode.com/stefanpochmann/), realmente aprendí mucho de él.
 
 
 
 ## Licencia MIT
 
-Sentite libre de usar, copiar, modificar, fusionar o publicar, solo agregue una referencia, por favor.
+Sentite libre de usar, copiar, modificar, fusionar o publicar, solo agregale una referencia, por favor.
 Si te ayuda o te gusta, podés destacarlo o compartirlo. Gracias : )
 Me alegro si quieres contribuir a que sea mejor.
 
@@ -82,9 +82,9 @@ Me alegro si quieres contribuir a que sea mejor.
 
 
 
-## Discusiones de generalización extraídas de LeetCode
+## Discusiones generales extraídas de LeetCode
 
-Extraje las discusiones más populares y filtré las que resumen un enfoque general de un tema en particular, como la recurrencia, la programación dinámica, la ventana deslizante, la manipulación de bits.
+Extraje las discusiones más populares y filtré las que resumen el enfoque más general de un tema en particular, como la recurrencia, la programación dinámica, la ventana deslizante, la manipulación de bits.
 
 Vale la pena leer:
 
@@ -123,4 +123,4 @@ Vale la pena leer:
 
 
 ## Contacto
-recnac@foxmail.com
+recnac@foxmail.com (en idioma inglés o chino)
