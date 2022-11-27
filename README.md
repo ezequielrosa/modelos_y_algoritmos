@@ -22,11 +22,11 @@ Mi intención original era usarlos personalmente pero ahora me doy cuenta que se
 
 ## Explicaciones complementarias
 
-1. Está escrito en **Python3**, pero sería fácil exportarlos a otros lenguajes, como **Java**, **C++**. Simplemente reemplazando la dulzura sintáctica de Python y sus trucos avanzados, tal vez solo se vuelvan un poco menos concisos.
+1. Está escrito en **Python3**, pero sería fácil exportarlos a otros lenguajes, como **Java**, **C++**, simplemente reemplazando la dulzura sintáctica de Python y sus trucos avanzados, tal vez solo se vuelvan un poco menos concisos.
 
 2. Debido a mis limitadas capacidades y a la escacés de tiempo aquí solo se cubren los algoritmos y estructuras de datos **comunes**. Casi adecuados para una entrevista laboral, pero insuficientes para presentarse a un concurso.
 
-3. Hice todo lo posible para recopilar y resumir los esquemas generales y los mejores casos de uso en algún área específica, aunque cada versión puede no ser la mejor solución posible, o bien puede que efectivamente sea la de mejor rendimiento y la solución más concisa pero que no sea precisamente la más adecuada a tu necesidad. Dentro del rendimiento aceptable, **la mejor implementación para cada uno de estos casos es la que nos resulte más convenientemente**.
+3. Hice todo lo posible para recopilar y resumir los esquemas generales y los mejores casos de uso en algún área específica, aunque cada versión puede no ser la mejor solución posible, o bien puede que efectivamente sea la de mejor rendimiento y la solución más concisa pero que no sea precisamente la más adecuada a tu necesidad. Dentro del rendimiento aceptable, **la mejor implementación para cada uno de estos casos es la que nos resulte más conveniente**.
 
 4. Los patrones de código están escritos en python con algo de **pseudocódigo**, así que uso `self` y agrego funciones auxiliares para que no de error el compilador. Hay que reemplazarlos con tu código (la lógica del mismo) de acuerdo a lo que van indicando los comentarios.
 
