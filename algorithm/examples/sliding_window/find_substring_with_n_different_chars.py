@@ -8,7 +8,7 @@
 	Problema:	Dada una cadena s encontrar la subcadena más larga que contiene p cantidad de caracteres distintos.
 	Entrada:	Dada una string s y un número positivo p.
 	Salida: 	Buscar la subcadena r más larga dentro de la cadena s que contiene p cantidad de caracteres distintos. 
-				Si p es mayor que el número total de caracteres distintos en la string, r devuelve la string completa.
+			Si p es mayor que el número total de caracteres distintos en la string, r devuelve la string completa.
 
 	El problema difiere del problema de encontrar la subsecuencia más larga con cantidad p caracteres distintos. 
 	A diferencia de las subsecuencias, subcadenas se requiere que ocupen posiciones consecutivas dentro de la string original.
@@ -25,18 +25,24 @@
 
 	Utiliza dos punteros como límites de una ventana deslizable
 	Utiliza una colección counter(dict) como conjunto para ir manteniendo el estado actual de la búsqueda 
-	Utiliza un contador como condición de corte, el cual se actualiza cada vez que cambia una clave de la colección counter(dict)
+	Utiliza un contador como condición de éxito, el cual se actualiza cada vez que cambia una clave de la colección counter(dict)
 	Además puede cumplir con un patrón p o condición que se debe respetar
 
-	Tiempo: 	O(n), el tiempo de ejecución es del orden de n porque se recorre toda la cadena
-	
+	Tiempo: 	O(n), el tiempo de ejecución es del orden de n porque se recorre toda la cadena	
 	Espacio:	O(k) donde k es el tamaño del conjunto p, k = len(set(p)), el espacio depende del patrón p que se debe respetar
 
 	-----------------------------------
 
-	En este 
-	o segmento que va a devolver como resultado final
+	SOLUCION
 
+	1.	Como resultado vamos a devolver la subcadena que haya quedado dentro de la ventana cuando esta fué más grande
+	2.	La ventana crece mientras esté compuesta por hasta p cantidad de caracteres distintos
+	3.	Cada caracter distinto va a ser un elemento del conjunto, una llave clave del contador counter(dict)
+	4.	Utilizamos dos punteros auxiliares para registrar el primer momento máximo de la ventana
+	5.	Cuando la cantidad de caracteres en la ventana es superior a p la mantenemos en tamaño y la seguimos avanzando
+	6.	Cada vez que la cantidad de caracteres que componen la cadena cambia verificamos si se vuelve a cumplir la condición p
+	7.	El proceso no termina hasta que la ventana no haya llegado al final de la cadena
+	
 '''
 
 
