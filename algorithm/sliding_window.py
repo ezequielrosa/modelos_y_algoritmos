@@ -9,7 +9,7 @@
 # and a count as condition checker, update it when trigger some key changes.
 #
 # Tiempo:  O(n)
-# Espacio: O(k) k = len(set(p))
+# Espacio: O(k) donde k es el tamaño del conjunto p, k = len(set(p))
 from collections import Counter
 
 
@@ -68,4 +68,7 @@ def sliding_window_template_with_examples(s, p):
     return res
 
 
-# refer to https://leetcode.com/problems/minimum-window-substring/discuss/26808/here-is-a-10-line-template-that-can-solve-most-substring-problems
+# para mayores referencias dirigirse a 
+# https://leetcode.com/problems/minimum-window-substring/discuss/26808/here-is-a-10-line-template-that-can-solve-most-substring-problems
+# ejemplo
+# https://www.techiedelight.com/?id=HhbJ
