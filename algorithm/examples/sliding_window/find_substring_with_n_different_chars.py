@@ -48,7 +48,7 @@
 from collections import Counter
 
 
-def sliding_window_template_with_examples(s, p):
+def find_substring_with_n_different_chars(s, p):
 	contador = Counter()
 	start, end = 0, 0
 	desde, hasta = 0, 0
