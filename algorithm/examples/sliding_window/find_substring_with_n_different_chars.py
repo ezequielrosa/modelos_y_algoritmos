@@ -45,67 +45,36 @@
 	
 '''
 
-
 from collections import Counter
 
 
 def sliding_window_template_with_examples(s, p):
-    # inicializar la tabla hash
-    # counter se usa para indicar el estado actual, en algunos casos se podría utilizar defaultdict en vez de counter
-    # por ejemplo si no hubiera restricciones p
-    # en este caso necesitamos llevar un conjunto con hasta p + 1 cantidad de elementos
-    counter = Counter(p)
+	contador = Counter()
+	start, end = 0, 0
+	desde, hasta = 0, 0
 
-    # los dos punteros que indican los extremos de la ventana deslizante
-    start, end = 0, 0
-    # los dos punteros que indican desde y hasta donde fue más grande la ventana
-    # es decir la ventana más grande que solo tuvo p cantidad de caracteres
-    desde, hasta = 0, 0
-    # condicion de corte, se actualiza cada vez que cambia alguna clave, el valor inicial depende del caso
-    # en nuestro caso la cantidad de caracteres distintos que hay en la ventana
-    # mientras sea menor o igual a p ampliamos la ventana
-    count = 0
-    # resultado, se devuelve un entero (en caso de máximo o mínimo) o una lista (con todos los índices)
-    r = 0
+	while end < len(s):
 
-    # recorrer la cadena s de principio a fin
-    while end < len(s):
-	# incrementamos el contador del caracter actual en la colección counter
-        counter[s[end]] += 1
+		contador[s[end]] += 1
 
-	'''
-	# actualiza el contador según alguna condición
-        if counter[s[end]] > 1:
-            count += 1
-        end += 1
-	'''
+		while len(contador) > p:
+
+			contador[s[start]] -= 1
+
+			if contador[s[start]] == 0:
+				del contador[s[start]]
+			start += 1
 	
-        # condición del contador
-        while len(counter) > p:
-            '''
-            acá actualizamos res si estamos buscando un mínimo 
-            '''
-	    # si hay más de p caracteres distintos mantenemos el tamaño de la ventana
-            # avanzamos el puntero start para hacerlo inválido o válido nuevamente
-	    # restamos la cantidad del caracter que hay en start porque ya no pertenece a la ventana
-            counter[s[start]] -= 1
-            # update count based on some condition
-            if counter[s[start]] == 0:
-                del counter[s[start]]
-            start += 1
-        '''
-        acá actualizamos res si estamos buscando un máximo
-        '''
+		if hasta - desde < end - start:
+			hasta = end
+			desde = start
+		
+		end += 1
+		
+	return s[desde:hasta + 1]
 
-	if hasta - desde < end - start
-	    hasta = end
-	    desde = start
-	
-	end += 1
-	'''
-        res = max(res, end - start)
-	'''
-    return s[desde:hasta + 1]
+# para probarlo y experimentar
+# https://techiedelight.com/compiler/?~find_substring_with_n_different_chars
 
 # para mayores referencias dirigirse a leetcode
 # https://leetcode.com/problems/minimum-window-substring/discuss/26808/here-is-a-10-line-template-that-can-solve-most-substring-problems
