@@ -47,34 +47,24 @@
 
 from collections import Counter
 
-
-def find_substring_with_n_different_chars(s, p):
+def find_max_substring_with_n_different_chars(s, p):
 	contador = Counter()
 	start, end = 0, 0
 	desde, hasta = 0, 0
-
 	while end < len(s):
-
 		contador[s[end]] += 1
-
 		while len(contador) > p:
-
 			contador[s[start]] -= 1
-
-			if contador[s[start]] == 0:
-				del contador[s[start]]
+			if contador[s[start]] == 0 : del contador[s[start]]
 			start += 1
-	
 		if hasta - desde < end - start:
 			hasta = end
 			desde = start
-		
 		end += 1
-		
 	return s[desde:hasta + 1]
 
 # para probarlo y experimentar
-# https://techiedelight.com/compiler/?~find_substring_with_n_different_chars
+# https://techiedelight.com/compiler/?~find_max_substring_with_n_different_chars
 
 # para mayores referencias dirigirse a leetcode
 # https://leetcode.com/problems/minimum-window-substring/discuss/26808/here-is-a-10-line-template-that-can-solve-most-substring-problems
