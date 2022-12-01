@@ -66,5 +66,6 @@ def find_max_substring_with_n_different_chars(s, p):
 # para probarlo y experimentar
 # https://techiedelight.com/compiler/?~find_max_substring_with_n_different_chars
 
-# para mayores referencias dirigirse a leetcode
+# para mayores referencias dirigirse a
+# https://www.techiedelight.com/es/sliding-window-problems/
 # https://leetcode.com/problems/minimum-window-substring/discuss/26808/here-is-a-10-line-template-that-can-solve-most-substring-problems
