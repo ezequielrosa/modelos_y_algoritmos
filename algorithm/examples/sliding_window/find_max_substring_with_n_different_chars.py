@@ -49,18 +49,19 @@ from collections import Counter
 
 def find_max_substring_with_n_different_chars(s, p):
 	contador = Counter()
-	start, end = 0, 0
+	inicio, fin = 0, 0
 	desde, hasta = 0, 0
-	while end < len(s):
-		contador[s[end]] += 1
+	while fin < len(s):
+		# agregar el caracter actual al 
+		contador[s[fin]] += 1
 		while len(contador) > p:
-			contador[s[start]] -= 1
-			if contador[s[start]] == 0 : del contador[s[start]]
-			start += 1
-		if hasta - desde < end - start:
-			hasta = end
-			desde = start
-		end += 1
+			contador[s[inicio]] -= 1
+			if contador[s[inicio]] == 0 : del contador[s[inicio]]
+			inicio += 1
+		if hasta - desde < fin - inicio:
+			hasta = fin
+			desde = inicio
+		fin += 1
 	return s[desde:hasta + 1]
 
 # para probarlo y experimentar
