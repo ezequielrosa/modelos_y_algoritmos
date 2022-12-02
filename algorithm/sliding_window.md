@@ -8,12 +8,12 @@ En la técnica de la ventana deslizante mantenemos una ventana que satisface las
 
 Las siguientes son algunas de las preguntas más frecuentes en las entrevistas laborales sobre la técnica de la ventana deslizante:
 
-1. ***Encuentre la subcadena más larga de una cadena que contiene k personajes distintos***
-Dada una string y un número positivo k, busque la subcadena más larga de la cadena que contiene k caracteres distintos. Si k es mayor que el número total de caracteres distintos en la string, devuelve la string completa.
+1. ***Encontrar la subcadena más larga de una cadena s que contiene p caracteres distintos***
+Dada una string s y un número positivo p, busque la subcadena más larga de la cadena que contiene p caracteres distintos. Si p es mayor que el número total de caracteres distintos en la string, devuelve la string completa.
 https://github.com/ezequielrosa/modelos_y_algoritmos/blob/master/algorithm/examples/sliding_window/encontrar_mayor_subcadena_con_p_diferentes_caracteres.py
 
-2. ***Encuentra todas las subcadenas de una cadena que son una permutación de otra cadena***
-Encuentra todas las subcadenas de una cadena que contiene todos los caracteres de otra cadena. En otras palabras, busque todas las subcadenas de la primera cadena que sean anagramas de la segunda cadena.
+2. ***Encontrar todas las subcadenas de una cadena s que son una permutación de otra cadena p***
+Encontrar todas las subcadenas de una cadena s que contiene todos los caracteres de otra cadena p. En otras palabras, busque todas las subcadenas de la primera cadena que sean anagramas de la segunda cadena.
 
 3. ***Encuentre la subcadena más larga de una cadena que contiene caracteres distintos***
 Dada una cadena, busque la subcadena más larga que contenga caracteres distintos.
