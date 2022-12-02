@@ -35,11 +35,11 @@
 
 	SOLUCION
 
-	1.	Como resultado vamos a devolver la subcadena que haya quedado dentro de la ventana cuando esta fué más grande
+	1.	Vamos a devolver la subcadena que haya quedado dentro de la ventana cuando esta fué más grande
 	2.	La ventana crece mientras esté compuesta por hasta p cantidad de caracteres distintos
 	3.	Cada caracter distinto va a ser un elemento del conjunto, una llave clave del contador counter(dict)
-	4.	Utilizamos dos punteros auxiliares para registrar el momento y tamaño máximo de la ventana
-	5.	Cuando la cantidad de caracteres en la ventana es superior a p mantenemos su tamaño y seguimos avanzando
+	4.	Utilizamos dos punteros auxiliares para registrar el momento del tamaño máximo de la ventana
+	5.	Cuando la cantidad de caracteres en la ventana es superior a p la achicamos
 	6.	Cada vez que la cantidad de caracteres que componen la cadena cambia verificamos si se vuelve a cumplir la condición p
 	7.	El proceso no termina hasta que la ventana no haya llegado al final de la cadena
 	
