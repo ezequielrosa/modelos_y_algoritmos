@@ -40,37 +40,19 @@
 from collections import Counter
 
 def encontrar_anagramas(s, p):
-	# s es la cadena de entrada (string)
-	# p es el patrón que condiciona la búsqueda en este caso otra cadena
-	# contador es una colección que sirve de conjunto y contador
-	contador = Counter()
-	# vent_inicio es el puntero límite inferior de la ventana
-	# vent_fin es el puntero límite superior de la ventana
-	vent_inicio, vent_fin = 0, 0
-	# result_desde es el puntero inferior que indica dónde la ventana fué máxima
-	# result_hasta es el puntero superior que indica dónde la ventana fué máxima
-	result_desde, result_hasta = 0, 0
-	# recorrer con la ventana deslizante toda la cadena s
-	while vent_fin < len(s):
-		# incrementar en el contador la cantidad del caracter actual
-		contador[s[vent_fin]] += 1
-		# si en el contador hay más de p caracteres distintos achicar la ventana
-		while len(contador) > p:
-			# quitar el caracter del inicio de la ventana
-			contador[s[vent_inicio]] -= 1
-			# quitar el caracter del conjunto si ya no pertenece a la ventana
-			if contador[s[vent_inicio]] == 0 : del contador[s[vent_inicio]]
-			# achicar la ventana avanzando el puntero inferior
-			vent_inicio += 1
-		# en este punto la ventana tiene p o menos caracteres distintos
-		# verificamos si este nuevo tamaño de la ventana es el mayor
-		if result_hasta - result_desde < vent_fin - vent_inicio:
-			result_hasta = vent_fin
-			result_desde = vent_inicio
-		# incrementamos el tamaño de la ventana avanzando el límite superior
-		vent_fin += 1
-	# devolvemos la subcadena resultante
-	return s[result_desde:result_hasta + 1]
+    conjunto_p = Counter(p)
+    conjunto_ventana = Counter()
+    result = {}
+    fin = 0
+    while fin < len(s):
+        conjunto_ventana[s[fin]] += 1
+        if sum(conjunto_ventana.values()) == len(p):
+            if conjunto_ventana == conjunto_p:
+                result[fin-len(p)+1] = s[fin-len(p)+1:fin+1]
+            conjunto_ventana[s[fin-len(p)+1]] -= 1
+            if conjunto_ventana[s[fin-len(p)+1]] == 0: del conjunto_ventana[s[fin-len(p)+1]]
+        fin += 1
+    return result
 
 # para probarlo y experimentar
 # https://techiedelight.com/compiler/?~find_max_substring_with_n_different_chars
